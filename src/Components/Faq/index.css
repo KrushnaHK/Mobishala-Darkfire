@@ -1,0 +1,143 @@
+.faq-container {
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #000000;
+}
+
+.faq-title {
+  font-size: 3em;
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  margin-top: 2em;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 1em;
+}
+
+.faq-subtitle {
+  font-size: 1.125em;
+  color: #9b9b9b;
+  margin-bottom: 3.75em;
+}
+
+.still-have-heading {
+  font-size: 2em;
+  color: #FFFFFF;
+  font-family: Lato, sans-serif;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 3em;
+}
+
+.still-have-para {
+  font-size: 1.125em;
+  color: #9b9b9b;
+  font-family: Lato, sans-serif;
+}
+
+.contact-all-button {
+  margin-top: 1.25em;
+  padding: 0.625em 1.25em;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border: 0.0625em solid #fff;
+  border-radius: 0.3125em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 6.75em;
+  height: 3.125em;
+  margin-bottom: 6.25em;
+}
+
+.contact-all-button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .faq-title {
+    font-size: 2.5em;
+  }
+
+  .faq-subtitle {
+    font-size: 1em;
+  }
+
+  .still-have-heading {
+    font-size: 1.75em;
+  }
+
+  .still-have-para {
+    font-size: 1em;
+  }
+
+  .contact-all-button {
+    font-size: 0.875em;
+    padding: 0.5em 1em;
+    width: 6em;
+    height: 2.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 1em;
+  }
+
+  .faq-title {
+    font-size: 2.25em;
+  }
+
+  .faq-subtitle {
+    font-size: 0.875em;
+  }
+
+  .still-have-heading {
+    font-size: 1.5em;
+  }
+
+  .still-have-para {
+    font-size: 0.875em;
+  }
+
+  .contact-all-button {
+    width: 6.5em;
+    height: 2.75em;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 4%;
+  }
+
+  .faq-title {
+    font-size: 2em;
+  }
+
+  .faq-subtitle {
+    font-size: 0.75em;
+  }
+
+  .still-have-heading {
+    font-size: 1.25em;
+  }
+
+  .still-have-para {
+    font-size: 0.75em;
+  }
+
+  .contact-all-button {
+    width: 7em;
+    height: 3.25em;
+    font-size: 1em;
+  }
+}

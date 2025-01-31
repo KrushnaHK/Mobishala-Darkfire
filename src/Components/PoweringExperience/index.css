@@ -1,0 +1,78 @@
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  padding-bottom: 4em;
+}
+
+.scrolling-content {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  gap: 50px;
+  margin-bottom: 48px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.powering-experience-heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 2.4em;
+  margin-top: 2.4em;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Media Queries for different screen sizes */
+@media (min-width: 1201px) {
+  .scrolling-content {
+    animation: scroll-left 30s linear infinite; /* Default speed */
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .scrolling-content {
+    animation: scroll-left 20s linear infinite; /* Faster speed for smaller screens */
+  }
+
+  .powering-experience-heading {
+    font-size: 1.5em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .scrolling-content {
+    animation: scroll-left 20s linear infinite; /* Even faster speed for tablets */
+  }
+
+  .powering-experience-heading {
+    font-size: 1.3em;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .scrolling-content {
+    animation: scroll-left 10s linear infinite; /* Fastest speed for mobile devices */
+  }
+
+  .powering-experience-heading {
+    font-size: 1.2em;
+  }
+  .scrolling-container{
+    padding-bottom: 2em;
+  }
+}

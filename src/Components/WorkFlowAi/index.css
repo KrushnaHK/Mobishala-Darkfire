@@ -1,0 +1,163 @@
+.service-page {
+  padding: 5%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.service-page-heading {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-bottom: 2.5em;
+  color: #FFFFFF;
+  font-family: Lato, sans-serif;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 2em;
+}
+
+.service-grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: flex;
+  gap: 1.25em;
+  margin-bottom: 2.1875em;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  border-radius: 0.625em;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #0e0f0f;
+  padding: 2em;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-card {
+  flex: 2;
+  width: 33em;
+  height: auto;
+  position: relative;
+}
+
+.small-card {
+  flex: 1;
+  width: 13.75em;
+  height: auto;
+  position: relative;
+}
+
+.big-card-image,
+.small-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px dotted #505050;
+  border-radius: 0.5em;
+  border-left: none;
+  margin-bottom: 2em;
+}
+
+.service-card p {
+  position: absolute;
+  bottom: 0.625em;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.3125em;
+  font-size: 1em;
+  color: #FFFFFF;
+  font-weight: 500;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0em 5em;
+  white-space: nowrap;
+  margin-top: 5em;
+}
+
+@media (max-width: 1200px) {
+  .service-row {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .big-card,
+  .small-card {
+    flex: 1 1 48%;
+    width: auto;
+  }
+
+  .service-card p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-page-heading {
+    font-size: 2em;
+  }
+
+  .service-row {
+    flex-direction: row;
+    gap: 2.5em;
+  }
+
+  .big-card,
+  .small-card {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .service-card p {
+    font-size: 0.9em;
+    padding-top: 5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-page-heading {
+    font-size: 1.75em;
+  }
+
+  .service-card {
+    padding: 1.25em;
+    padding-bottom: 2.5em;
+  }
+
+  .service-card p {
+    font-size: 0.7em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .big-card-image,
+  .small-card-image {
+    margin-bottom: 1em;
+  }
+
+  .service-page {
+    padding-top: 0;
+  }
+
+  .service-page-heading {
+    padding-top: 1em;
+  }
+}

@@ -1,0 +1,16 @@
+
+
+.scrolling-logo {
+  width: 9em;
+  height: 2.5em;
+  margin-bottom: 0.625em;
+  margin-left: 3.75em;
+}
+
+
+@media (max-width:480px) {
+  .scrolling-logo{
+    width: 8em;
+    height: 2em;
+  }
+}

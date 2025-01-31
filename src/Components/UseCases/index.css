@@ -1,0 +1,151 @@
+.use-cases-container {
+  text-align: center;
+  padding: 5%;
+  background-color: #000;
+  color: #fff;
+  padding-top: 4em;
+}
+
+.use-cases-container-heading {
+  font-size: 2.5em;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.usecases-card {
+  width: 100%;
+  background-color: #0E0F0F;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-top: 2em;
+}
+
+.card-image {
+  width: 2em;
+  height: 2em;
+  border-radius: 0.5em;
+  padding-bottom: 0;
+  transition: all 0.3s ease;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0.5em;
+  background-image: linear-gradient(90deg, #ffffff, #9b9b9b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 1em;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #9b9b9b;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .usecases-card {
+    width: 45%;
+    max-width: 31.25em;
+    padding: 1.25em;
+  }
+
+  .card-image {
+    width: 3.125em;
+    height: 3.125em;
+  }
+
+  h3 {
+    font-size: 1.375em;
+  }
+
+  p {
+    font-size: 0.875em;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 1.25em;
+  }
+
+  .usecases-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.125em;
+  }
+
+  .card-image {
+    width: 3em;
+    height: 3em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 0.9375em;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .usecases-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1em;
+  }
+
+  .card-image {
+    width: 1.875em;
+    height: 1.875em;
+  }
+  
+  h2{
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.125em;
+  }
+
+  p {
+    font-size: 0.875em;
+  }
+
+  .usecases-card{
+    margin-bottom: 1.5em;
+  }
+}
