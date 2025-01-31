@@ -6,7 +6,7 @@
   text-align: center;
   background-image: 
     linear-gradient(180deg, #fff0, #fff0 90%, #000000 98%), 
-    url(https://res.cloudinary.com/djifdyfkd/image/upload/v1737961992/676e3df095b993ae5271afda_Video_Header_rzbrp9.jpg);
+    url('../../assets/image3.jpg');
   background-size: cover;
   position: static;
   background-attachment: fixed;
